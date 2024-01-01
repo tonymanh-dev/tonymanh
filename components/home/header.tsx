@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Header() {
   return (
-    <section className="w-full sm:pt-24">
+    <section className="w-full pt-24">
       <div className="mb-4">
         <Image
           src="/profile.jpeg"
