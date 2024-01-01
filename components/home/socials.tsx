@@ -31,16 +31,16 @@ export default function Socials() {
     <section className="w-full pt-24">
       <h4 className="text-2xl font-medium mb-8">🍻Connect with me</h4>
       <div className="w-fit flex flex-col gap-y-4">
-        <Social link="" title="Twitter">
+        <Social link="https://twitter.com/tonymanh_" title="Twitter">
           <FaXTwitter className="h-5 w-5" />
         </Social>
-        <Social link="" title="Instagram">
+        <Social link="https://www.instagram.com/manh_eng/" title="Instagram">
           <FaInstagram className="h-5 w-5" />
         </Social>
-        <Social link="" title="Github">
+        <Social link="https://github.com/tonymanh-dev" title="Github">
           <FaGithub className="h-5 w-5" />
         </Social>
-        <Social link="" title="LinkedIn">
+        <Social link="https://www.linkedin.com/in/tonymanh/" title="LinkedIn">
           <FaLinkedinIn className="h-5 w-5" />
         </Social>
       </div>
