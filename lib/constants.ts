@@ -15,12 +15,12 @@ export const navLinks = [
 
 export const products = [
   {
-    name: 'Black PDF',
+    name: 'SumyAI',
     description:
-      'Simplify your doccument, just ask, get quick summaries, and find key info in seconds—no more hassle of reading through everything.',
-    link: 'https://www.blackpdf.com/',
-    icon: '/blackpdf.png',
-    phLink: 'https://www.producthunt.com/products/vocala',
+      'SumyAI is a Time-Saving tool that summarizes YouTube videos and helps you get quick insights from them without having to spend hours watching the entire video.',
+    link: 'https://www.sumyai.com/',
+    icon: '/sumyai.png',
+    phLink: 'https://www.producthunt.com/products/sumyai',
   },
   {
     name: 'Vocala',
