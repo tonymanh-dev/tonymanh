@@ -15,6 +15,14 @@ export const navLinks = [
 
 export const products = [
   {
+    name: 'Honkist',
+    description:
+      'Expand your mind with collections of short, concise ideas from books, enhanced by powerful AI insights.',
+    link: 'https://www.honkist.com/',
+    icon: '/honkist.png',
+    phLink: 'https://www.producthunt.com/products/honkist',
+  },
+  {
     name: 'SumyAI',
     description:
       'SumyAI is a Time-Saving tool that summarizes YouTube videos and helps you get quick insights from them without having to spend hours watching the entire video.',
