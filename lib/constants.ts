@@ -1,41 +1,49 @@
 export const navLinks = [
   {
-    href: '/',
-    title: 'home',
+    href: "/",
+    title: "home",
   },
   {
-    href: '/',
-    title: 'products',
+    href: "/",
+    title: "products",
   },
   {
-    href: '/',
-    title: 'blog',
+    href: "/",
+    title: "blog",
   },
-]
+];
 
 export const products = [
   {
-    name: 'Honkist',
+    name: "Instagen",
     description:
-      'Expand your mind with collections of short, concise ideas from books, enhanced by powerful AI insights.',
-    link: 'https://www.honkist.com/',
-    icon: '/honkist.png',
-    phLink: 'https://www.producthunt.com/products/honkist',
+      "Instantly create stunning images and videos with the world's top AI model. Perfect for creators, marketers, and businesses.",
+    link: "https://www.instagen.com/",
+    icon: "/instagen.png",
+    phLink: "https://www.producthunt.com/posts/instagen",
   },
   {
-    name: 'SumyAI',
+    name: "Honkist",
     description:
-      'SumyAI is a Time-Saving tool that summarizes YouTube videos and helps you get quick insights from them without having to spend hours watching the entire video.',
-    link: 'https://www.sumyai.com/',
-    icon: '/sumyai.png',
-    phLink: 'https://www.producthunt.com/products/sumyai',
+      "Expand your mind with collections of short, concise ideas from books, enhanced by powerful AI insights.",
+    link: "https://www.honkist.com/",
+    icon: "/honkist.png",
+    phLink: "https://www.producthunt.com/products/honkist",
   },
   {
-    name: 'Vocala',
+    name: "SumyAI",
     description:
-      'A vocabulary learning app that helps you learn and memorize new words in a better way. ',
-    link: 'https://www.vocala.app/',
-    icon: '/vocala.jpg',
-    phLink: 'https://www.producthunt.com/products/vocala',
+      "Supercharge your productivity—instantly turn recordings, videos, and PDFs into structured notes, mind maps, quizzes, flashcards, and deep dive chats.",
+    link: "https://www.sumyai.com/",
+    icon: "/sumyai.png",
+    phLink: "https://www.producthunt.com/products/sumyai",
   },
-]
+  {
+    name: "Vocala",
+    description:
+      "A vocabulary learning app that helps you learn and memorize new words in a better way. ",
+    link: "https://vocala.vercel.app/",
+    icon: "/vocala.jpg",
+    phLink: "https://www.producthunt.com/products/vocala",
+  },
+];
