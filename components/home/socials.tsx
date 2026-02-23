@@ -1,21 +1,28 @@
-import Link from 'next/link'
-import React, { ReactNode } from 'react'
+"use client";
+
+import Link from "next/link";
+import React, { ReactNode } from "react";
 import {
   FaXTwitter,
   FaGithub,
   FaInstagram,
   FaLinkedinIn,
-} from 'react-icons/fa6'
+} from "react-icons/fa6";
+import { t } from "@/lib/i18n";
+import LangTransitionWrapper from "@/components/lang-transition-wrapper";
+import { useLocale } from "@/components/locale-provider";
 
 export default function Socials() {
+  const { locale } = useLocale();
+
   const Social = ({
     link,
     title,
     children,
   }: {
-    link: string
-    title: string
-    children: ReactNode
+    link: string;
+    title: string;
+    children: ReactNode;
   }) => (
     <Link
       href={link}
@@ -26,24 +33,28 @@ export default function Socials() {
       {children}
       <span className=" ml-2">{title}</span>
     </Link>
-  )
+  );
   return (
     <section className="w-full pt-24">
-      <h4 className="text-2xl font-medium mb-8">🍻Connect with me</h4>
-      <div className="w-fit flex flex-col gap-y-4">
-        <Social link="https://twitter.com/tonymanh_" title="Twitter">
-          <FaXTwitter className="h-5 w-5" />
-        </Social>
-        <Social link="https://www.instagram.com/manh_eng/" title="Instagram">
-          <FaInstagram className="h-5 w-5" />
-        </Social>
-        <Social link="https://github.com/tonymanh-dev" title="Github">
-          <FaGithub className="h-5 w-5" />
-        </Social>
-        <Social link="https://www.linkedin.com/in/tonymanh/" title="LinkedIn">
-          <FaLinkedinIn className="h-5 w-5" />
-        </Social>
-      </div>
+      <LangTransitionWrapper locale={locale}>
+        <h4 className="text-2xl font-medium mb-8">
+          {t(locale, "socials_title")}
+        </h4>
+        <div className="w-fit flex flex-col gap-y-4">
+          <Social link="https://twitter.com/tonymanh_" title="Twitter">
+            <FaXTwitter className="h-5 w-5" />
+          </Social>
+          <Social link="https://www.instagram.com/manh_eng/" title="Instagram">
+            <FaInstagram className="h-5 w-5" />
+          </Social>
+          <Social link="https://github.com/tonymanh-dev" title="Github">
+            <FaGithub className="h-5 w-5" />
+          </Social>
+          <Social link="https://www.linkedin.com/in/tonymanh/" title="LinkedIn">
+            <FaLinkedinIn className="h-5 w-5" />
+          </Social>
+        </div>
+      </LangTransitionWrapper>
     </section>
-  )
+  );
 }

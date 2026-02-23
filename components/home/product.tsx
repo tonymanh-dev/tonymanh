@@ -1,8 +1,13 @@
-import { products } from '@/lib/constants'
-import Image from 'next/image'
-import Link from 'next/link'
-import React from 'react'
-import { Button } from '../ui/button'
+"use client";
+
+import { getLocalizedProducts } from "@/lib/constants";
+import { t } from "@/lib/i18n";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { Button } from "../ui/button";
+import LangTransitionWrapper from "@/components/lang-transition-wrapper";
+import { useLocale } from "@/components/locale-provider";
 
 const ArrowIcon = ({ className }: { className?: string }) => {
   return (
@@ -19,68 +24,75 @@ const ArrowIcon = ({ className }: { className?: string }) => {
         fill="currentColor"
       />
     </svg>
-  )
-}
+  );
+};
 
 export default function Product() {
+  const { locale } = useLocale();
+  const products = getLocalizedProducts(locale);
+
   return (
     <section className="w-full pt-16 sm:pt-24">
-      <h4 className="text-2xl font-medium mb-8">⭐️My products</h4>
-      <div className="space-y-10">
-        {products.map((product, i) => (
-          <div key={i}>
-            <div className="flex items-center space-x-2 mb-2">
-              <span>
-                <Image
-                  src={product.icon}
-                  alt="Product image"
-                  width={30}
-                  height={30}
-                  className="rounded-full object-contain"
-                />
-              </span>
-              <h4 className="font-medium">{product.name}</h4>
-            </div>
+      <LangTransitionWrapper locale={locale}>
+        <h4 className="text-2xl font-medium mb-8">
+          {t(locale, "products_title")}
+        </h4>
+        <div className="space-y-10">
+          {products.map((product, i: number) => (
+            <div key={i}>
+              <div className="flex items-center space-x-2 mb-2">
+                <span>
+                  <Image
+                    src={product.icon}
+                    alt="Product image"
+                    width={30}
+                    height={30}
+                    className="rounded-full object-contain"
+                  />
+                </span>
+                <h4 className="font-medium">{product.name}</h4>
+              </div>
 
-            <p className="text-muted-foreground">{product.description}</p>
-            <div className="-ml-3 mt-4 flex items-center space-x-4">
-              <Button
-                variant="link"
-                asChild
-                size="sm"
-                className="text-muted-foreground hover:text-primary"
-              >
-                <Link
-                  href={product.phLink}
-                  rel="noreferrer"
-                  target="_blank"
-                  className="flex items-center justify-between"
+              <p className="text-muted-foreground">{product.description}</p>
+              <div className="-ml-3 mt-4 flex items-center space-x-4">
+                <Button
+                  variant="link"
+                  asChild
+                  size="sm"
+                  className="text-muted-foreground hover:text-primary"
                 >
-                  product hunt
-                  <ArrowIcon className="ml-2" />
-                </Link>
-              </Button>
+                  <Link
+                    href={product.phLink}
+                    rel="noreferrer"
+                    target="_blank"
+                    className="flex items-center justify-between"
+                  >
+                    {t(locale, "products_productHunt")}
+                    <ArrowIcon className="ml-2" />
+                  </Link>
+                </Button>
 
-              <Button
-                variant="link"
-                asChild
-                size="sm"
-                className="text-muted-foreground hover:text-primary"
-              >
-                <Link
-                  href={product.link}
-                  rel="noreferrer"
-                  target="_blank"
-                  className="flex items-center justify-between"
+                <Button
+                  variant="link"
+                  asChild
+                  size="sm"
+                  className="text-muted-foreground hover:text-primary"
                 >
-                  visit website
-                  <ArrowIcon className="ml-2" />
-                </Link>
-              </Button>
+                  <Link
+                    href={product.link}
+                    rel="noreferrer"
+                    target="_blank"
+                    className="flex items-center justify-between"
+                  >
+                    {t(locale, "products_visitWebsite")}
+                    <ArrowIcon className="ml-2" />
+                  </Link>
+                </Button>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      </LangTransitionWrapper>
     </section>
-  )
+  );
 }
