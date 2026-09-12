@@ -67,6 +67,16 @@ const productData = [
     icon: "/honkist.png",
     phLink: "https://www.producthunt.com/products/honkist",
   },
+  {
+    name: "OnceRoll",
+    descriptions: {
+      en: "Your wedding, through everyone who was there. Guests scan a QR code to leave photos, videos, and voice messages you'll treasure forever.",
+      ja: "そこにいた全員による、あなたの結婚式。ゲストがQRコードをスキャンして写真・動画・音声メッセージを残せる、一生の宝物になるサービス。",
+    },
+    link: "https://onceroll.com/",
+    icon: "/onceroll.png",
+    phLink: "https://onceroll.com/",
+  },
 ];
 
 export const getLocalizedProducts = (locale: Locale) =>
