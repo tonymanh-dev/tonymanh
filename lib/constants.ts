@@ -17,6 +17,16 @@ export const navLinks = [
 
 const productData = [
   {
+    name: "OnceRoll",
+    descriptions: {
+      en: "Your wedding, through everyone who was there. Guests scan a QR code to leave photos, videos, and voice messages you'll treasure forever.",
+      ja: "そこにいた全員による、あなたの結婚式。ゲストがQRコードをスキャンして写真・動画・音声メッセージを残せる、一生の宝物になるサービス。",
+    },
+    link: "https://onceroll.com/",
+    icon: "/onceroll.png",
+    phLink: "https://onceroll.com/",
+  },
+  {
     name: "Stuley",
     descriptions: {
       en: "The #1 study tool that helps you ace exams and learn faster without burnout.",
@@ -66,16 +76,6 @@ const productData = [
     link: "https://www.honkist.com/",
     icon: "/honkist.png",
     phLink: "https://www.producthunt.com/products/honkist",
-  },
-  {
-    name: "OnceRoll",
-    descriptions: {
-      en: "Your wedding, through everyone who was there. Guests scan a QR code to leave photos, videos, and voice messages you'll treasure forever.",
-      ja: "そこにいた全員による、あなたの結婚式。ゲストがQRコードをスキャンして写真・動画・音声メッセージを残せる、一生の宝物になるサービス。",
-    },
-    link: "https://onceroll.com/",
-    icon: "/onceroll.png",
-    phLink: "https://onceroll.com/",
   },
 ];
 
