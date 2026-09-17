@@ -17,6 +17,26 @@ export const navLinks = [
 
 const productData = [
   {
+    name: "Frametify",
+    descriptions: {
+      en: "Turn app screenshots and videos into professional iPhone mockups in seconds, no design software needed.",
+      ja: "アプリのスクリーンショットや動画を、デザインソフト不要で数秒で本格的なiPhoneモックアップに変換。",
+    },
+    link: "https://apps.apple.com/us/app/frametify/id6764835050",
+    icon: "/frametify.png",
+    phLink: "https://apps.apple.com/us/app/frametify/id6764835050",
+  },
+  {
+    name: "Kitte",
+    descriptions: {
+      en: "Turn your photos into collectible postage stamps with perforated edges, then pin them to scrapbook boards or mail them to friends. No account required.",
+      ja: "写真をミシン目付きの切手風コレクションに変換。スクラップブックに貼ったり友達に送ったりできる、アカウント登録不要のアプリ。",
+    },
+    link: "https://apps.apple.com/us/app/kitte-snap-stamps/id6774886822",
+    icon: "/kitte.png",
+    phLink: "https://apps.apple.com/us/app/kitte-snap-stamps/id6774886822",
+  },
+  {
     name: "OnceRoll",
     descriptions: {
       en: "Your wedding, through everyone who was there. Guests scan a QR code to leave photos, videos, and voice messages you'll treasure forever.",
