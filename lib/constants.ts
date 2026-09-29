@@ -17,14 +17,14 @@ export const navLinks = [
 
 const productData = [
   {
-    name: "Frametify",
+    name: "Voicera",
     descriptions: {
-      en: "Turn app screenshots and videos into professional iPhone mockups in seconds, no design software needed.",
-      ja: "アプリのスクリーンショットや動画を、デザインソフト不要で数秒で本格的なiPhoneモックアップに変換。",
+      en: "Talk. It's written. Dictate, edit, and ask questions by voice on your Mac, turning speech into polished text without leaving your current app.",
+      ja: "話すだけで文章に。Macで音声による入力・編集・質問ができ、今使っているアプリを離れずに話し言葉を整った文章へ変換。",
     },
-    link: "https://apps.apple.com/us/app/frametify/id6764835050",
-    icon: "/frametify.png",
-    phLink: "https://apps.apple.com/us/app/frametify/id6764835050",
+    link: "https://voicera.app/",
+    icon: "/voicera.png",
+    phLink: "https://voicera.app/",
   },
   {
     name: "Kitte",
@@ -76,7 +76,16 @@ const productData = [
     icon: "/kachiai.png",
     phLink: "https://www.kachiai.app/",
   },
-
+  {
+    name: "Frametify",
+    descriptions: {
+      en: "Turn app screenshots and videos into professional iPhone mockups in seconds, no design software needed.",
+      ja: "アプリのスクリーンショットや動画を、デザインソフト不要で数秒で本格的なiPhoneモックアップに変換。",
+    },
+    link: "https://apps.apple.com/us/app/frametify/id6764835050",
+    icon: "/frametify.png",
+    phLink: "https://apps.apple.com/us/app/frametify/id6764835050",
+  },
   {
     name: "Instagen",
     descriptions: {
